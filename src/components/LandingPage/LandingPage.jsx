@@ -6,7 +6,7 @@ import backgroundImage from "../../../public/images/landing page bacground.png"
 
 function LandingPage() {
   const [adultCount, setAdultCount] = useState(2)
-  const [childCount, setChildCount] = useState(1)
+  const [childCount, setChildCount] = useState(1) 
 
   const handleCount = (type, operation) => {
     if (type === "adult") {

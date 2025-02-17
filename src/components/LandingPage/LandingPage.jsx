@@ -18,11 +18,12 @@ function LandingPage() {
 
   return (
     <div
-      className="h-screen w-screen bg-white rounded shadow-md"
+      className="h-full w-full bg-white rounded shadow-md"
       style={{ 
         backgroundImage: `url(${backgroundImage})`, 
         backgroundSize: "cover", 
-        backgroundPosition: "center top 0%" 
+        backgroundPosition: "center top 0%" ,
+        overflow: "hidden" // Ensure no overflow
       }}
     >
       <TopNavbar />
@@ -30,23 +31,23 @@ function LandingPage() {
         style={{
           display: "flex",
           justifyContent: "flex-start",
-          position: "absolute",
-          top: "95px",
-          left: "63px",
+          marginTop: "54px",
+          marginLeft: "63px",
           gap: "10px",
+          color: "white", // Ensure text color is white
         }}
       >
         <span style={{ fontSize: "12px", fontWeight: 700 }}>Home</span>
         <span style={{ fontSize: "12px", fontWeight: 700 }}>Accommodation</span>
         <span style={{ fontSize: "12px", fontWeight: 700 }}>Facilities</span>
       </div>
-      <div style={{ textAlign: "center", position: "absolute", top: "88px", width: "100%" }}>
+      <div style={{ textAlign: "center",  marginTop: "-30px", width: "100%", color: "white" }}> {/* Ensure text color is white */}
         <span style={{ fontSize: "24px", fontWeight: 700 }}>Ritz Carlton</span>
         <div style={{ marginTop: "-10px" }}>
           <span style={{ fontSize: "12px", fontWeight: 700, color: "white", opacity: 0.5 }}>London</span>
         </div>
       </div>
-      <div style={{ position: "absolute", top: "96px", right: "102px" }}>
+      <div style={{  marginTop: "-50px", marginLeft: "86%" }}>
         <button
           style={{
             padding: "9px 29px",
@@ -64,7 +65,7 @@ function LandingPage() {
           RESERVATION
         </button>
       </div>
-      <div style={{ textAlign: "center", position: "absolute", top: "365px", width: "100%" }}>
+      <div style={{ textAlign: "center",  marginTop: "249px", width: "100%", color: "white" }}> {/* Ensure text color is white */}
         <span style={{ fontSize: "96px", fontWeight: 700, color: "#FFFFFF" }}>Love The Stay</span>
         <div style={{ marginTop: "10px" }}>
           <span style={{ fontSize: "16px", fontWeight: 400, color: "#FFFFFF", opacity: 0.8 }}>
@@ -74,20 +75,22 @@ function LandingPage() {
       </div>
       <div
         style={{
-          position: "absolute",
-          bottom: "41px",
+          
+          marginTop: "122px",
           width: "90%",
           maxWidth: "1196px",
           height: "166px",
           backgroundColor: "rgba(255, 255, 255, 0.3)",
-          left: "50%",
           transform: "translateX(-50%)",
           display: "flex",
+          marginLeft: "50%",
           alignItems: "center",
           padding: "0 45px",
           gap: "20px",
           flexWrap: "wrap",
           justifyContent: "space-between",
+          color: "white", // Ensure text color is white
+          marginBottom: "41px", // Add margin bottom
         }}
       >
         <span style={{ fontSize: "20px", fontWeight: 700, color: "#FFFFFF", marginLeft: "45px" }}>RESERVATION</span>

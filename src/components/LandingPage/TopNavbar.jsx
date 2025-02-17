@@ -11,7 +11,7 @@ const TopNavbar = () => {
     return (
         <div>
             <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', margin: 0, padding: 10 }}>
-                <div style={{ marginLeft: '29px', display: 'flex', alignItems: 'center' }}>
+                <div style={{ marginLeft: '29px', display: 'flex', alignItems: 'center', color: 'white' }}>
                     <img src={locationIcon} alt="Location" style={{ width: '16px', height: '16px' }} />
                     <span style={{ fontSize: '12px', fontWeight: 700, marginLeft: '10px' }}>42 Carry Islands, Maldives</span>
                     <img src={phoneIcon} alt="Phone" style={{ width: '14px', height: '14px', marginLeft: '20px' }} />

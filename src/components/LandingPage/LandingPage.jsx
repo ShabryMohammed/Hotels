@@ -23,7 +23,8 @@ function LandingPage() {
         backgroundImage: `url(${backgroundImage})`, 
         backgroundSize: "cover", 
         backgroundPosition: "center top 0%" ,
-        overflow: "hidden" // Ensure no overflow
+        overflow: "hidden", // Ensure no overflow
+        fontFamily: "'Merriweather', serif" // Apply Merriweather font
       }}
     >
       <TopNavbar />
@@ -35,13 +36,14 @@ function LandingPage() {
           marginLeft: "63px",
           gap: "10px",
           color: "white", // Ensure text color is white
+          fontFamily: "'Merriweather', serif" // Apply Merriweather font
         }}
       >
         <span style={{ fontSize: "12px", fontWeight: 700 }}>Home</span>
         <span style={{ fontSize: "12px", fontWeight: 700 }}>Accommodation</span>
         <span style={{ fontSize: "12px", fontWeight: 700 }}>Facilities</span>
       </div>
-      <div style={{ textAlign: "center",  marginTop: "-30px", width: "100%", color: "white" }}> {/* Ensure text color is white */}
+      <div style={{ textAlign: "center",  marginTop: "-30px", width: "100%", color: "white", fontFamily: "'Merriweather', serif" }}> {/* Ensure text color is white */}
         <span style={{ fontSize: "24px", fontWeight: 700 }}>Ritz Carlton</span>
         <div style={{ marginTop: "-10px" }}>
           <span style={{ fontSize: "12px", fontWeight: 700, color: "white", opacity: 0.5 }}>London</span>
@@ -58,6 +60,7 @@ function LandingPage() {
             fontSize: "12px",
             borderRadius: "0",
             outline: "none",
+            fontFamily: "'Merriweather', serif" // Apply Merriweather font
           }}
           onFocus={(e) => e.target.style.outline = "none"}
           onBlur={(e) => e.target.style.outline = "none"}
@@ -65,7 +68,7 @@ function LandingPage() {
           RESERVATION
         </button>
       </div>
-      <div style={{ textAlign: "center",  marginTop: "249px", width: "100%", color: "white" }}> {/* Ensure text color is white */}
+      <div style={{ textAlign: "center",  marginTop: "249px", width: "100%", color: "white", fontFamily: "'Merriweather', serif" }}> {/* Ensure text color is white */}
         <span style={{ fontSize: "96px", fontWeight: 700, color: "#FFFFFF" }}>Love The Stay</span>
         <div style={{ marginTop: "10px" }}>
           <span style={{ fontSize: "16px", fontWeight: 400, color: "#FFFFFF", opacity: 0.8 }}>
@@ -91,6 +94,7 @@ function LandingPage() {
           justifyContent: "space-between",
           color: "white", // Ensure text color is white
           marginBottom: "41px", // Add margin bottom
+          fontFamily: "'Merriweather', serif" // Apply Merriweather font
         }}
       >
         <span style={{ fontSize: "20px", fontWeight: 700, color: "#FFFFFF", marginLeft: "45px" }}>RESERVATION</span>
@@ -119,6 +123,7 @@ function LandingPage() {
                 cursor: "pointer",
                 padding: "0",
                 outline: "none",
+                fontFamily: "'Merriweather', serif" // Apply Merriweather font
               }}
               onFocus={(e) => e.target.style.outline = "none"}
               onBlur={(e) => e.target.style.outline = "none"}
@@ -142,6 +147,7 @@ function LandingPage() {
                 cursor: "pointer",
                 padding: "0",
                 outline: "none",
+                fontFamily: "'Merriweather', serif" // Apply Merriweather font
               }}
               onFocus={(e) => e.target.style.outline = "none"}
               onBlur={(e) => e.target.style.outline = "none"}
@@ -169,6 +175,7 @@ function LandingPage() {
                 cursor: "pointer",
                 padding: "0",
                 outline: "none",
+                fontFamily: "'Merriweather', serif" // Apply Merriweather font
               }}
               onFocus={(e) => e.target.style.outline = "none"}
               onBlur={(e) => e.target.style.outline = "none"}
@@ -192,6 +199,7 @@ function LandingPage() {
                 cursor: "pointer",
                 padding: "0",
                 outline: "none",
+                fontFamily: "'Merriweather', serif" // Apply Merriweather font
               }}
               onFocus={(e) => e.target.style.outline = "none"}
               onBlur={(e) => e.target.style.outline = "none"}
@@ -211,6 +219,7 @@ function LandingPage() {
             cursor: "pointer",
             borderRadius: "0",
             outline: "none",
+            fontFamily: "'Merriweather', serif" // Apply Merriweather font
           }}
           onFocus={(e) => e.target.style.outline = "none"}
           onBlur={(e) => e.target.style.outline = "none"}

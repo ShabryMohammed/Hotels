@@ -40,7 +40,7 @@ function ImageCarousel() {
   }
 
   return (
-    <div className="flex flex-col items-center h-[85vh] w-full lg:w-[50vw] overflow-hidden lg:ml-[5%]">
+    <div className="flex flex-col items-center h-[85vh] w-full lg:w-[50vw] overflow-hidden lg:ml-[5%]" style={{ fontFamily: "'Merriweather', serif" }}>
       {[0, 1, 2].map((position) => (
         <div
           key={position}
@@ -65,7 +65,7 @@ function ImageCarousel() {
 
 export default function AmenitiesAndServices() {
   return (
-    <section className="my-[30px] mx-4 lg:mx-[96px] relative min-h-screen py-12 lg:py-20">
+    <section className="my-[30px] mx-4 lg:mx-[96px] relative min-h-screen py-12 lg:py-20" style={{ fontFamily: "'Merriweather', serif" }}>
       {/* Background with blur effect */}
       <div
         className="absolute inset-0 bg-[#E1C9A180] blur-[20px] -z-10"
@@ -80,7 +80,7 @@ export default function AmenitiesAndServices() {
             <h2 className="text-3xl sm:text-3xl lg:text-4xl font-bold mb-6 lg:mb-[66px] text-[#141D31]">
               Amenities & Services
             </h2>
-            <p className="mb-6 lg:mb-[28px] text-lg lg:text-xl text-[#141D31] leading-relaxed max-w-md mx-auto" style={{ lineHeight: '3vh' }}>
+            <p className="mb-6 lg:mb-[28px] text-lg lg:text-xl text-[#141D31] leading-relaxed max-w-md mx-auto" style={{ lineHeight: '3vh', fontFamily: "'Tai Heritage Pro'" }}>
               “Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin. The first two words themselves are a truncation of dolorem ipsum ("pain itself)"
             </p>
             <button

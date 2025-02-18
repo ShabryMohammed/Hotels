@@ -1,6 +1,6 @@
 export default function ContactUs() {
     return (
-        <div className="flex flex-col items-center px-4 md:px-0">
+        <div className="flex flex-col items-center px-4 md:px-0" style={{ fontFamily: "'Merriweather', serif" }}>
             <h1 className="text-[24px] md:text-[36px] font-[700] text-center mt-[50px] md:mt-[179px] text-[#141D31]">Contact Us</h1>
             <div className="flex flex-col md:flex-row mt-[50px] md:mt-[162px]">
                 <form className="space-y-6 md:space-y-17 w-full md:w-[954px] flex flex-col items-center">

@@ -46,8 +46,8 @@ export default function DiningAndResturent() {
       {/* Overlay Content - This stays static */}
       <div className="relative inset-0 items-center justify-center flex mr-[471px] mt-[-700px]">
         <div className="bg-[#2B3147] text-white p-8 mb-50 flex flex-col items-center" style={{ width: '644px', height: '573px' }}>
-          <h2 className="text-[36px] font-[700] mb-[66px] text-center mt-[47px]">Dining & Restaurant</h2>
-          <p className="mb-[19px] text-[20px] text-white text-center" style={{ width: '460px', height: '180px', lineHeight: '20px' }}>
+          <h2 className="text-[36px] font-[700] mb-[66px] text-center mt-[47px]" style={{ fontFamily: "'Merriweather', serif" }}>Dining & Restaurant</h2>
+          <p className="mb-[19px] text-[20px] font-[400] text-white text-center" style={{ width: '460px', height: '180px', lineHeight: '20px', fontFamily: "'Tai Heritage Pro', serif" }}>
             “Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin. The first two words themselves are a truncation of dolorem ipsum ("pain itself) "
           </p>
           <button className="px-[29px] py-2 border border-white hover:bg-white/10 transition-colors">View More</button>

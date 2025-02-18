@@ -62,7 +62,7 @@ export default function AutoSlidingGallery() {
 
   return (
     <>
-      <div className="relative w-full h-[528px] overflow-hidden flex items-center justify-center">
+      <div className="relative w-full h-[528px] overflow-hidden flex items-center justify-center" style={{ fontFamily: "'Merriweather', serif" }}>
         {/* Background with blur effect */}
         <div className="absolute inset-0 bg-[#434A78]">
           <div className="absolute inset-0 bg-gradient-to-r from-[#E1C9A1] to-[#FFFFFF] opacity-50 blur-[280px]"></div>
@@ -81,7 +81,7 @@ export default function AutoSlidingGallery() {
                 <img src={item.image || "/placeholder.svg"} alt={item.title} className="w-full h-full object-cover" />
                 <div className="absolute bottom-[13px] left-1/2 transform -translate-x-1/2 w-[224px] h-[36px] flex items-center justify-center">
                   <div className="absolute bottom-0 w-full h-[30px] bg-[#101010b3]"></div>
-                  <h3 className="relative text-white text-xl font-semibold">{item.title}</h3>
+                  <h3 className="relative text-white text-[16px] font-semibold items-center pt-1">{item.title}</h3>
                 </div>
               </motion.div>
             ))}
@@ -102,7 +102,7 @@ export default function AutoSlidingGallery() {
         <div className="absolute bottom-0 left-0 w-full h-[84px] bg-gradient-to-b from-transparent to-[#141D31] z-10 "></div>
       </div>
       {/* Gradient transition */}
-      <div className="bg-[#141D31] pt-[138px] pb-[84px] pl-[122px] relative">
+      <div className="bg-[#141D31] pt-[138px] pb-[84px] pl-[122px] relative" style={{ fontFamily: "'Merriweather', serif" }}>
         {/* Add other elements below this section */}
         <div className="relative w-full h-auto flex">
           {/* Rectangle behind the image */}

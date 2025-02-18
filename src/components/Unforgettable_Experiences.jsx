@@ -1,8 +1,8 @@
 export default function UnforgettableExperiences() {
     return (
       <div className="flex flex-col justify-center items-center min-h-screen py-16">
-        <h1 className="text-[36px] font-bold text-[#141D31]">Unforgettable Experience</h1>
-        <p className="mt-[45px] text-base font-normal text-[#141D31] text-center max-w-[700px] leading-4">
+        <h1 className="text-[36px] font-bold text-[#141D31]" style={{ fontFamily: "'Merriweather', serif" }}>Unforgettable Experience</h1>
+        <p className="mt-[45px] text-base font-normal text-[#141D31] text-center max-w-[700px] leading-4" style={{ fontFamily: "'Merriweather', serif" }}>
           Lorem ipsum is typically a corrupted version of De finibus bonorum et Lorem ipsum is typically a corrupted
           version of De finibus bonorum et Lorem ipsum is typically a corrupted version of De finibus bonorum et
         </p>

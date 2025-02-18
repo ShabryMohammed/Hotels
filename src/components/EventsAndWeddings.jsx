@@ -33,9 +33,9 @@ export default function EventsAndWeddings() {
 
   return (
     <div className="flex flex-col justify-center items-center min-h-screen py-16">
-      <h1 className="text-2xl sm:text-[36px] font-bold text-[#141D31] text-center">Events & Weddings</h1>
-      <p className="mt-6 sm:mt-[45px] text-sm sm:text-base text-[#141D31] text-center max-w-[90%] sm:max-w-[700px] leading-6 mb-20" style={{lineHeight: "16px"}}>
-      Lorem ipsum is typically a corrupted version of De finibus bonorum et Lorem ipsum is typically a corrupted version of De finibus bonorum et Lorem ipsum is typically a corrupted version of De finibus bonorum et 
+      <h1 className="text-2xl sm:text-[36px] font-bold text-[#141D31] text-center" style={{ fontFamily: "'Merriweather', serif" }}>Events & Weddings</h1>
+      <p className="mt-6 sm:mt-[45px] text-sm sm:text-base text-[#141D31] text-center max-w-[90%] sm:max-w-[700px] leading-6 mb-20" style={{ lineHeight: "16px", fontFamily: "'Merriweather', serif" }}>
+        Lorem ipsum is typically a corrupted version of De finibus bonorum et Lorem ipsum is typically a corrupted version of De finibus bonorum et Lorem ipsum is typically a corrupted version of De finibus bonorum et 
       </p>
 
       {/* Gradient Background (Includes Everything) */}
@@ -51,8 +51,8 @@ export default function EventsAndWeddings() {
             {/* Overlay */}
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[90%] sm:translate-y-[65%] w-[90%] sm:w-[85%] lg:w-[80%]">
               <div className="bg-white shadow-lg text-black p-6 sm:p-8">
-                <h3 className="text-lg sm:text-[20px] font-bold mb-2 sm:mb-4">{slides[currentSlide].title}</h3>
-                <p className="text-sm sm:text-[16px] mb-2 sm:mb-4 max-w-[90%] sm:max-w-[827px]" style={{lineHeight: "16px"}}>
+                <h3 className="text-lg sm:text-[20px] font-bold mb-2 sm:mb-4" style={{ fontFamily: "'Merriweather', serif" }}>{slides[currentSlide].title}</h3>
+                <p className="text-sm sm:text-[16px] mb-2 sm:mb-4 max-w-[90%] sm:max-w-[827px]" style={{ lineHeight: "16px", fontFamily: "'Tai Heritage Pro', serif" }}>
                   {slides[currentSlide].description}
                 </p>
                 <button className="border border-black px-6 sm:px-10 py-1 text-xs sm:text-[12px] font-bold">View More</button>

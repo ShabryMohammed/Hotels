@@ -3,7 +3,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className="h-full bg-[#2B315E] text-white">
+    <div className="h-full bg-[#2B315E] text-white" style={{ fontFamily: "'Merriweather', serif" }}>
       {/* Main content container */}
       <div className="container mx-auto px-6 pt-20 pb-7 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Hotel Information */}
@@ -29,7 +29,7 @@ function Footer() {
         </div>
 
         {/* Booking Section */}
-        <div className="space-y-4 text-center">
+        <div className="space-y-4 text-center" style={{ fontFamily: "'DM Sans', sans-serif" }}>
           <h2 className="text-[24px] md:text-[36px] font-[400]">Book Now</h2>
           <button className="text-[10px] md:text-[12px] font-[700] bg-[#D5C3A7] text-[#141D31] py-[20px] md:py-[29px] px-[20px] md:px-30 my-5">
             MY RESERVATION

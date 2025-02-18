@@ -35,7 +35,7 @@ export default function SpecialOffersAndPackages() {
   return (
     <section className="w-full py-12 md:py-16 lg:py-20 flex justify-center items-center">
       <div className="container px-4 md:px-6 ">
-        <h2 className="text-[36px] font-[700] text-center mb-21">Special Offers & Packages</h2>
+        <h2 className="text-[36px] font-[700] text-center mb-21" style={{ fontFamily: "'Merriweather', serif" }}>Special Offers & Packages</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-12 ">
           {offers.map((offer) => (
             <div key={offer.id} className="flex flex-col sm:flex-row items-center mx-auto">
@@ -47,11 +47,12 @@ export default function SpecialOffersAndPackages() {
                 />
               </div>
               <div className="flex flex-col items-center justify-center mt-4 sm:mt-0 sm:ml-4" style={{width: '308px', margin: 0, padding: 0}}>
-                <h4 className="text-[20px] font-[700] mb-[23px] text-center sm:text-left">{offer.title}</h4>
-                <p className="text-[20px] font-[400] text-center sm:text-left" style={{lineHeight:'20px', width:'232px'}}>{offer.description}</p>
+                <h4 className="text-[20px] font-[700] mb-[23px] text-center sm:text-left" style={{ fontFamily: "'Tai Heritage Pro', serif" }}>{offer.title}</h4>
+                <p className="text-[20px] font-[400] text-center sm:text-left" style={{lineHeight:'20px', width:'232px', fontFamily: "'Tai Heritage Pro', serif" }}>{offer.description}</p>
                 <button
                   className="px-8 py-1 border-2 border-[#141D31] text-[#141D31] text-[12px] font-[700] 
                   hover:bg-[#141D31] hover:text-white transition-colors duration-300 mt-[46px]"
+                  style={{ fontFamily: "'Merriweather', serif" }}
                 >
                   View More
                 </button>

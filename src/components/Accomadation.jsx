@@ -34,7 +34,7 @@ const Accommodation = () => {
   ]
 
   return (
-    <section className="max-w-7xl mx-auto px-4 mt-[85px]">
+    <section className="max-w-7xl mx-auto px-4 mt-[85px]" style={{ fontFamily: "'Merriweather', serif" }}>
       <h1 className="text-4xl font-semibold text-center text-[#101010] mb-[30px]">Accommodation</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[12px] gap-y-[21px] mb-[46px] ml-[130px] mr-[130px]">

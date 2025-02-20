@@ -35,22 +35,22 @@ export default function DiningAndResturent() {
   return (
     <div className="relative w-full h-full overflow-hidden mb-[100px]">
       {/* Background Images */}
-      <div className="relative inset-0 flex justify-center items-center" style={{ marginLeft:'471px', marginTop: '146px' }}>
-        <img src={restaurants[currentIndex].image} alt={restaurants[currentIndex].name} className="object-cover" style={{ width: '814px', height: '834px' }} />
+      <div className="relative inset-0 flex justify-center items-center md:ml-[471px] md:mt-[146px] ml-0 mt-0">
+        <img src={restaurants[currentIndex].image} alt={restaurants[currentIndex].name} className="object-cover w-full md:w-[814px] md:h-[834px] h-auto" />
         {/* Name Overlay */}
-        <div className="absolute bottom-0 text-[16px] font-[700] w-[814px] text-center bg-[#141D3180] text-white py-9">
+        <div className="absolute bottom-0 text-[16px] font-[700] w-full md:w-[814px] text-center bg-[#141D3180] text-white py-9">
           {restaurants[currentIndex].name}
         </div>
       </div>
 
       {/* Overlay Content - This stays static */}
-      <div className="relative inset-0 items-center justify-center flex mr-[471px] mt-[-700px]">
-        <div className="bg-[#2B3147] text-white p-8 mb-50 flex flex-col items-center" style={{ width: '644px', height: '573px' }}>
+      <div className="relative inset-0 items-center justify-center flex md:mr-[471px] md:mt-[-700px] mr-0 mt-0">
+        <div className="bg-[#2B3147] text-white p-8 mb-50 flex flex-col items-center w-full md:w-[644px] md:h-[573px] h-auto">
           <h2 className="text-[36px] font-[700] mb-[66px] text-center mt-[47px]" style={{ fontFamily: "'Merriweather', serif" }}>Dining & Restaurant</h2>
-          <p className="mb-[19px] text-[20px] font-[400] text-white text-center" style={{ width: '460px', height: '180px', lineHeight: '20px', fontFamily: "'Tai Heritage Pro', serif" }}>
+          <p className="mb-[19px] text-[20px] font-[400] text-white text-center w-full md:w-[460px] md:h-[180px] h-auto lineHeight-['20px']" style={{ fontFamily: "'Tai Heritage Pro', serif" }}>
             “Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin. The first two words themselves are a truncation of dolorem ipsum ("pain itself) "
           </p>
-          <button className="px-[29px] py-2 border border-white hover:bg-white/10 transition-colors">View More</button>
+          <button className="px-[29px] py-2 border border-white hover:bg-white/10 transition-colors mt-9">View More</button>
         
           {/* Navigation Circles */}
           <div className="flex gap-[12px] mt-[57px]">

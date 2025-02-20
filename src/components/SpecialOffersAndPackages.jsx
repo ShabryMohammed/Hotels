@@ -39,7 +39,7 @@ export default function SpecialOffersAndPackages() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-12 ">
           {offers.map((offer) => (
             <div key={offer.id} className="flex flex-col sm:flex-row items-center mx-auto">
-              <div className="relative w-[311px] h-[493px]">
+              <div className="relative w-[311px] h-[493px] mb-4 sm:mb-0">
                 <img
                   src={offer.image || "/placeholder.svg"}
                   alt={`Special offer ${offer.id}`}

@@ -68,36 +68,39 @@ function LandingPage() {
           RESERVATION
         </button>
       </div>
-      <div style={{ textAlign: "center",  marginTop: "249px", width: "100%", color: "white", fontFamily: "'Merriweather', serif" }}> {/* Ensure text color is white */}
-        <span style={{ fontSize: "96px", fontWeight: 700, color: "#FFFFFF" }}>Love The Stay</span>
-        <div style={{ marginTop: "10px" }}>
-          <span style={{ fontSize: "16px", fontWeight: 400, color: "#FFFFFF", opacity: 0.8 }}>
-            Lorem ipsum is typically a corrupted version of De finibus bonorum et
-          </span>
-        </div>
-      </div>
+      <div
+      className={`text-center mt-16 sm:mt-24 md:mt-32 lg:mt-48 xl:mt-64 w-full text-white`}
+    >
+      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">Love The Stay</h1>
+      <p
+        className={`mt-2 sm:mt-3 md:mt-4 text-[8px] sm:text-[10px] md:text-[11px] lg:text-[16px] opacity-80 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto `}
+      >
+        Lorem ipsum is typically a corrupted version of De finibus bonorum et
+      </p>
+    </div>
       <div
         style={{
-          
           marginTop: "122px",
           width: "90%",
           maxWidth: "1196px",
-          height: "166px",
+          height: "auto", // Allow height to adjust based on content
           backgroundColor: "rgba(255, 255, 255, 0.3)",
           transform: "translateX(-50%)",
           display: "flex",
           marginLeft: "50%",
           alignItems: "center",
-          padding: "0 45px",
+          padding: "40px 45px", // Adjust padding for larger screens
           gap: "20px",
           flexWrap: "wrap",
           justifyContent: "space-between",
-          color: "white", // Ensure text color is white
-          marginBottom: "41px", // Add margin bottom
-          fontFamily: "'Merriweather', serif" // Apply Merriweather font
+          color: "white",
+          marginBottom: "41px",
+          fontFamily: "'Merriweather', serif",
+          flexDirection: "row", // Default to horizontal layout
         }}
+        className="responsive-container" // Add a class for media queries
       >
-        <span style={{ fontSize: "20px", fontWeight: 700, color: "#FFFFFF", marginLeft: "45px" }}>RESERVATION</span>
+        <span style={{ fontSize: "20px", fontWeight: 700, color: "#FFFFFF", marginLeft: "0px" }}>RESERVATION</span>
         <div style={{ textAlign: "center" }}>
           <span style={{ fontSize: "16px", fontWeight: 700, color: "#FFFFFF" }}>Choose Date</span>
           <div style={{ marginTop: "40px" }}>
@@ -123,10 +126,8 @@ function LandingPage() {
                 cursor: "pointer",
                 padding: "0",
                 outline: "none",
-                fontFamily: "'Merriweather', serif" // Apply Merriweather font
+                fontFamily: "'Merriweather', serif"
               }}
-              onFocus={(e) => e.target.style.outline = "none"}
-              onBlur={(e) => e.target.style.outline = "none"}
             >
               -
             </button>
@@ -147,10 +148,8 @@ function LandingPage() {
                 cursor: "pointer",
                 padding: "0",
                 outline: "none",
-                fontFamily: "'Merriweather', serif" // Apply Merriweather font
+                fontFamily: "'Merriweather', serif"
               }}
-              onFocus={(e) => e.target.style.outline = "none"}
-              onBlur={(e) => e.target.style.outline = "none"}
             >
               +
             </button>
@@ -175,10 +174,8 @@ function LandingPage() {
                 cursor: "pointer",
                 padding: "0",
                 outline: "none",
-                fontFamily: "'Merriweather', serif" // Apply Merriweather font
+                fontFamily: "'Merriweather', serif"
               }}
-              onFocus={(e) => e.target.style.outline = "none"}
-              onBlur={(e) => e.target.style.outline = "none"}
             >
               -
             </button>
@@ -199,10 +196,8 @@ function LandingPage() {
                 cursor: "pointer",
                 padding: "0",
                 outline: "none",
-                fontFamily: "'Merriweather', serif" // Apply Merriweather font
+                fontFamily: "'Merriweather', serif"
               }}
-              onFocus={(e) => e.target.style.outline = "none"}
-              onBlur={(e) => e.target.style.outline = "none"}
             >
               +
             </button>
@@ -219,14 +214,38 @@ function LandingPage() {
             cursor: "pointer",
             borderRadius: "0",
             outline: "none",
-            fontFamily: "'Merriweather', serif" // Apply Merriweather font
+            fontFamily: "'Merriweather', serif"
           }}
-          onFocus={(e) => e.target.style.outline = "none"}
-          onBlur={(e) => e.target.style.outline = "none"}
         >
           Check Availability
         </button>
       </div>
+      <style>
+        {`
+          @media (max-width: 768px) {
+            .responsive-container {
+              flex-direction: column; /* Change to vertical layout */
+              height: auto; /* Allow height to adjust */
+              padding: 20px; /* Adjust padding for smaller screens */
+              gap: 30px; /* Increase gap between items for better spacing */
+              align-items: stretch; /* Stretch items to full width */
+            }
+            .responsive-container > * {
+              margin-left: 0; /* Remove left margin */
+              text-align: center; /* Center text */
+              width: 100%; /* Make each item full width */
+            }
+            .responsive-container button {
+              width: 100%; /* Make button full width */
+              margin-top: 20px; /* Add margin to the top of the button */
+            }
+            .responsive-container div {
+              margin-top: 20px; /* Add margin between sections */
+            }
+            
+          }
+        `}
+      </style>
     </div>
   )
 }

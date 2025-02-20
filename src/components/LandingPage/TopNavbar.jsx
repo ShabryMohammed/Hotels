@@ -1,34 +1,40 @@
-import React from 'react';
-import locationIcon from '../../../public/images/location.png';
-import phoneIcon from '../../../public/images/phone.png';
-import mailIcon from '../../../public/images/email.png';
-import linkedinIcon from '../../../public/images/linkedin.png';
-import facebookIcon from '../../../public/images/facebook.png';
-import instagramIcon from '../../../public/images/instagram.png';
-import twitterIcon from '../../../public/images/X.png';
+import locationIcon from "../../../public/images/location.png"
+import phoneIcon from "../../../public/images/phone.png"
+import mailIcon from "../../../public/images/email.png"
+import linkedinIcon from "../../../public/images/linkedin.png"
+import facebookIcon from "../../../public/images/facebook.png"
+import instagramIcon from "../../../public/images/instagram.png"
+import twitterIcon from "../../../public/images/X.png"
 
 const TopNavbar = () => {
-    return (
-        <div>
-            <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', margin: 0, padding: 10 }}>
-                <div style={{ marginLeft: '29px', display: 'flex', alignItems: 'center', color: 'white' }}>
-                    <img src={locationIcon} alt="Location" style={{ width: '16px', height: '16px' }} />
-                    <span style={{ fontSize: '12px', fontWeight: 700, marginLeft: '10px' }}>42 Carry Islands, Maldives</span>
-                    <img src={phoneIcon} alt="Phone" style={{ width: '14px', height: '14px', marginLeft: '20px' }} />
-                    <span style={{ fontSize: '12px', fontWeight: 700, marginLeft: '10px' }}>+123 456 789</span>
-                    <img src={mailIcon} alt="Mail" style={{ width: '16px', height: '16px', marginLeft: '20px' }} />
-                    <span style={{ fontSize: '12px', fontWeight: 700, marginLeft: '10px' }}>info@example.com</span>
-                </div>
-                <div style={{ marginRight: '103px', display: 'flex', alignItems: 'center', gap: '9px' }}>
-                    <img src={linkedinIcon} alt="LinkedIn" style={{ width: '30px', height: '30px' }} />
-                    <img src={facebookIcon} alt="Facebook" style={{ width: '30px', height: '30px' }} />
-                    <img src={instagramIcon} alt="Instagram" style={{ width: '30px', height: '30px' }} />
-                    <img src={twitterIcon} alt="Twitter" style={{ width: '30px', height: '30px' }} />
-                </div>
-            </nav>
-            <hr style={{ border: '1px solid #FFFFFF', width: '100%', margin: 0 }} />
+  return (
+    <div className=" text-white">
+      <nav className="container mx-5 px-4 py-3 flex flex-col sm:flex-row items-center justify-between">
+        <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 mb-4 sm:mb-0">
+          <div className="flex items-center gap-2">
+            <img src={locationIcon || "/placeholder.svg"} alt="Location" className="w-4 h-4" />
+            <span className="text-xs font-bold">42 Carry Islands, Maldives</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <img src={phoneIcon || "/placeholder.svg"} alt="Phone" className="w-3.5 h-3.5" />
+            <span className="text-xs font-bold">+123 456 789</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <img src={mailIcon || "/placeholder.svg"} alt="Mail" className="w-4 h-4" />
+            <span className="text-xs font-bold">info@example.com</span>
+          </div>
         </div>
-    );
-};
+        <div className="flex items-center gap-4 sm:ml-auto sm:mr-[-103px]">
+          <img src={linkedinIcon || "/placeholder.svg"} alt="LinkedIn" className="w-6 h-6 sm:w-7 sm:h-7" />
+          <img src={facebookIcon || "/placeholder.svg"} alt="Facebook" className="w-6 h-6 sm:w-7 sm:h-7" />
+          <img src={instagramIcon || "/placeholder.svg"} alt="Instagram" className="w-6 h-6 sm:w-7 sm:h-7" />
+          <img src={twitterIcon || "/placeholder.svg"} alt="Twitter" className="w-6 h-6 sm:w-7 sm:h-7" />
+        </div>
+      </nav>
+      <hr className="border-t border-white" />
+    </div>
+  )
+}
 
-export default TopNavbar;
+export default TopNavbar
+

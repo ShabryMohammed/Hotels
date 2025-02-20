@@ -40,14 +40,13 @@ function ImageCarousel() {
   }
 
   return (
-    <div className="flex flex-col items-center" style={{ height: "85vh", width: '100vh', overflow: "hidden",  marginLeft: '15%' }}>
+    <div className="flex flex-col items-center" style={{ height: "85vh", width: '100%', overflow: "hidden", marginLeft: 'auto', marginRight: 'auto' }}>
       {[0, 1, 2].map((position) => (
         <div
           key={position}
-          className="relative mb-[3%] transition-all duration-1000"
-          style={position === 1 ? { marginRight: "25%" } : {}}
+          className={`relative mb-[3%] transition-all duration-1000 ${position === 1 ? 'lg:mr-[25%]' : ''}`}
         >
-          <div className="relative w-full max-w-[50vw] h-[35vh]">
+          <div className="relative w-full max-w-[90vw] lg:max-w-[50vw] h-[35vh]">
             <img
               src={images[getImageIndex(position)].src || "/placeholder.svg"}
               alt={images[getImageIndex(position)].alt}
@@ -65,7 +64,7 @@ function ImageCarousel() {
 
 export default function AmenitiesAndServices() {
   return (
-    <section className="my-[30px] mx-[96px] relative bg-[#E1C9A180] min-h-screen py-12 lg:py-20">
+    <section className="my-[30px] mx-[16px] lg:mx-[96px] relative bg-[#E1C9A180] min-h-screen py-12 lg:py-20">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
           {/* Left content */}
@@ -75,8 +74,8 @@ export default function AmenitiesAndServices() {
             “Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin. The first two words themselves are a truncation of dolorem ipsum ("pain itself)"
             </p>
             <button
-              className="px-8 py-3 border-2 border-[#141D31] text-[#141D31] text-lg font-bold 
-              hover:bg-[#141D31] hover:text-white transition-colors duration-300 rounded-md"
+              className="px-14 py-2 border-2 border-[#141D31] text-[#141D31] text-lg font-bold 
+              hover:bg-[#141D31] hover:text-white transition-colors duration-300 "
             >
               View More
             </button>

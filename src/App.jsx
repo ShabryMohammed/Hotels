@@ -2,12 +2,12 @@ import LandingPage from "./components/LandingPage/LandingPage";
 import AutoSlidingGallery from "./components/AutoSlidingGallery";
 import Accommodation from "./components/Accomadation";
 import DiningAndResturent from "./components/DiningAndResturent";
-import AmenitiesAndServices from "./components/Amenities_and_Services";
+import AmenitiesAndServices from "./components/Amenities_and_Services/Amenities_and_Services";
 import SpecialOffersAndPackages from "./components/SpecialOffersAndPackages";
 import UnforgettableExperiences from "./components/Unforgettable_Experiences";
 import EventsAndWeddings from "./components/EventsAndWeddings";
 import ContactUs from "./components/ContactUs";
-import YourDestination from "./components/YourDestination";
+import YourDestination from "./components/YourLocation/YourDestination";
 import Footer from "./components/Footer";
 function App() {
   return (

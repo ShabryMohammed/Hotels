@@ -61,7 +61,7 @@ export default function EventsAndWeddings() {
           </div>
 
           {/* 🔹 Navigation Moved Inside Gradient */}
-          <div className="flex justify-center items-center gap-4 sm:gap-7 text-white text-sm sm:text-[17px] font-medium mt-50 sm:mt-50">
+          <div className="flex justify-center items-center gap-4 sm:gap-7 text-white text-sm sm:text-[17px] font-medium mt-70 sm:mt-50">
             <button onClick={prevSlide} className="hover:opacity-70">
               <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>

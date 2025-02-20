@@ -24,7 +24,7 @@ const TopNavbar = () => {
             <span className="text-xs font-bold">info@example.com</span>
           </div>
         </div>
-        <div className="flex items-center gap-4 sm:ml-auto sm:mr-[-103px]">
+        <div className="flex items-center gap-4 sm:ml-auto sm:mr-[-103px] lg:mr-0 lg:absolute lg:right-25">
           <img src={linkedinIcon || "/placeholder.svg"} alt="LinkedIn" className="w-6 h-6 sm:w-7 sm:h-7" />
           <img src={facebookIcon || "/placeholder.svg"} alt="Facebook" className="w-6 h-6 sm:w-7 sm:h-7" />
           <img src={instagramIcon || "/placeholder.svg"} alt="Instagram" className="w-6 h-6 sm:w-7 sm:h-7" />

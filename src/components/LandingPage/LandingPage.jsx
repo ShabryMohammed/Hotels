@@ -1,12 +1,14 @@
 "use client"
 
 import { useState } from "react"
+import { Menu, X } from "lucide-react"
 import TopNavbar from "./TopNavbar"
 import backgroundImage from "../../../public/images/landing page bacground.png"
 
 function LandingPage() {
   const [adultCount, setAdultCount] = useState(2)
-  const [childCount, setChildCount] = useState(1) 
+  const [childCount, setChildCount] = useState(1)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const handleCount = (type, operation) => {
     if (type === "adult") {
@@ -14,6 +16,10 @@ function LandingPage() {
     } else {
       setChildCount((prev) => (operation === "increment" ? prev + 1 : Math.max(0, prev - 1)))
     }
+  }
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
   }
 
   return (
@@ -28,56 +34,41 @@ function LandingPage() {
       }}
     >
       <TopNavbar />
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "flex-start",
-          marginTop: "54px",
-          marginLeft: "63px",
-          gap: "10px",
-          color: "white", // Ensure text color is white
-          fontFamily: "'Merriweather', serif" // Apply Merriweather font
-        }}
-      >
-        <span style={{ fontSize: "12px", fontWeight: 700 }}>Home</span>
-        <span style={{ fontSize: "12px", fontWeight: 700 }}>Accommodation</span>
-        <span style={{ fontSize: "12px", fontWeight: 700 }}>Facilities</span>
-      </div>
-      <div style={{ textAlign: "center",  marginTop: "-30px", width: "100%", color: "white", fontFamily: "'Merriweather', serif" }}> {/* Ensure text color is white */}
-        <span style={{ fontSize: "24px", fontWeight: 700 }}>Ritz Carlton</span>
-        <div style={{ marginTop: "-10px" }}>
-          <span style={{ fontSize: "12px", fontWeight: 700, color: "white", opacity: 0.5 }}>London</span>
+      <div className="relative flex justify-between items-center px-4 md:mt-20 mt-5">
+        <button onClick={toggleMenu} className="text-white md:hidden">
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+        <div className="absolute left-1/2 transform -translate-x-1/2 text-center">
+          <span className="text-lg md:text-2xl font-bold text-white ">Ritz Carlton</span>
+          <div className="mt-0.5">
+            <span className="text-[10px] md:text-sm font-bold text-white opacity-70">London</span>
+          </div>
         </div>
-      </div>
-      <div style={{  marginTop: "-50px", marginLeft: "86%" }}>
         <button
-          style={{
-            padding: "9px 29px",
-            border: "1px solid white",
-            backgroundColor: "transparent",
-            color: "white",
-            fontWeight: 700,
-            fontSize: "12px",
-            borderRadius: "0",
-            outline: "none",
-            fontFamily: "'Merriweather', serif" // Apply Merriweather font
-          }}
-          onFocus={(e) => e.target.style.outline = "none"}
-          onBlur={(e) => e.target.style.outline = "none"}
+          className="absolute right-0 md:right-25 px-2 py-0.5 md:px-7 md:py-2 border border-white bg-transparent text-white font-bold text-[10px] md:text-xs rounded-none focus:outline-none hover:bg-white hover:text-black transition-colors duration-300"
         >
           RESERVATION
         </button>
       </div>
+
+      {/* Navigation Menu */}
       <div
-      className={`text-center mt-16 sm:mt-24 md:mt-32 lg:mt-48 xl:mt-64 w-full text-white`}
-    >
-      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">Love The Stay</h1>
-      <p
-        className={`mt-2 sm:mt-3 md:mt-4 text-[8px] sm:text-[10px] md:text-[11px] lg:text-[16px] opacity-80 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto `}
+        className={`${
+          isMenuOpen ? "flex" : "hidden"
+        } flex-col items-start justify-start md:flex md:flex-row md:justify-start md:items-center md:ml-16 gap-3 text-white px-4  md:px-0 md:py-0 md:mt-[-20px]`}
       >
-        Lorem ipsum is typically a corrupted version of De finibus bonorum et
-      </p>
-    </div>
+        <span className="text-sm font-bold py-0 md:py-0">Home</span>
+        <span className="text-sm font-bold py-0 md:py-0">Accommodation</span>
+        <span className="text-sm font-bold py-0 md:py-0">Facilities</span>
+      </div>
+
+      <div className="text-center mt-16 sm:mt-24 md:mt-32 lg:mt-48 xl:mt-64 w-full text-white">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">Love The Stay</h1>
+        <p className="mt-2 sm:mt-3 md:mt-4 text-[8px] sm:text-[10px] md:text-[11px] lg:text-[16px] opacity-80 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto">
+          Lorem ipsum is typically a corrupted version of De finibus bonorum et
+        </p>
+      </div>
+
       <div
         style={{
           marginTop: "122px",
@@ -131,7 +122,7 @@ function LandingPage() {
             >
               -
             </button>
-            <span style={{ fontSize: "16px", fontWeight: 700, color: "#FFFFFF" }}>{adultCount}</span>
+            <span className="mt-4 md:mt-0" style={{ fontSize: "16px", fontWeight: 700, color: "#FFFFFF" }}>{adultCount}</span>
             <button
               onClick={() => handleCount("adult", "increment")}
               style={{
@@ -179,7 +170,7 @@ function LandingPage() {
             >
               -
             </button>
-            <span style={{ fontSize: "16px", fontWeight: 700, color: "#FFFFFF" }}>{childCount}</span>
+            <span className="mt-4 md:mt-0" style={{ fontSize: "16px", fontWeight: 700, color: "#FFFFFF" }}>{childCount}</span>
             <button
               onClick={() => handleCount("child", "increment")}
               style={{
@@ -242,7 +233,6 @@ function LandingPage() {
             .responsive-container div {
               margin-top: 20px; /* Add margin between sections */
             }
-            
           }
         `}
       </style>
